@@ -9,7 +9,7 @@ las carpetas que no se necesitan deben especificarse en el archivo ".dockerignor
 
 Se debe ejecutar el Dockerfile usando el comando: --> $ sudo docker build -t imagen1 . 
 
-Luego se debe ejecutar la imagen con: --> $  sudo docker run -it imagen1
+Luego se debe ejecutar la imagen con: --> $  sudo docker run imagen1
 
 
 Para extraer el "output1.txt" se puede usar: --> " docker cp  ID_CONTAINER:SRC_PATH DEST_PATH "
