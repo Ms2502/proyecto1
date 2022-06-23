@@ -1,21 +1,18 @@
 # proyecto1
 
+Antes de empezar se debe verificar que Docker se encuentra funcionando correctamente.
 
 
-1. Crear un codigo de python que:
--crea un archivo en el que escribe numeros del 0 al 100 separados por un salto de linea. x
+Los archivos necesarios se encuentran dentro de la carpeta "proyecto1", 
+las carpetas que no se necesitan deben especificarse en el archivo ".dockerignore" (por ejemplo la carpeta ".git")
 
-2. Subir el codigo a un repositorio de github. x
 
-3. Clonar el repositorio en una nueva carpeta. x   proyecto1clon 
+Se debe ejecutar el Dockerfile usando el comando: --> $ sudo docker build -t imagen1 . 
 
-4. Crear un docker para el codigo creado en 1. El docker tiene que crear el archivo de python fuera del contendor.
-    mirar la docu oficial para instalar docker x
+Luego se debe ejecutar la imagen con: --> $  sudo docker run -it imagen1
 
-    crear un dockerfile
-    hacer la imagen del dockerfile "docker build"(comando) 
-    correr el contenedor (asegurandome que el archivo lo crea de forma local) (comando: "docker run")
 
-5. Actualizar el repositorio, para subir el dockerfile al repositorio
+Para extraer el "output1.txt" se puede usar: --> " docker cp  ID_CONTAINER:SRC_PATH DEST_PATH "
 
-6. Actualizar la carpeta donde se clono el repositorio 
+en este caso usaremos: --> $ sudo docker cp c9ed44f7966c:/home/f1/output1.txt /home/ms/pyprojects1/proyecto1 
+
